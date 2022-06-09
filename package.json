@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "This is for a fictional cafe website called Mostaya's Maid Cafe.",
+  "main": "Home.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mostarya/PortfolioProject.git"
+  },
+  "author": "Skylar Foster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mostarya/PortfolioProject/issues"
+  },
+  "homepage": "https://github.com/Mostarya/PortfolioProject#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
