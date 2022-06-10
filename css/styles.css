@@ -1,0 +1,41 @@
+body {
+    font-family: "Garamond", serif;
+}
+
+h1, h2, h3 {
+    font-family: "Sofia", cursive;
+}
+
+h2 {
+    color: #f3bad4;
+}
+
+header h2 {
+    color: #f8d4e3;
+}
+
+.site-footer{
+    background-image: linear-gradient(#f7cdde, white);
+    padding: 20px 0;
+}
+footer {
+    background-image: linear-gradient(#ffc2db, white);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, #f393c0, #f7cdde, #f8f4f6);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: #ffacce;
+}
