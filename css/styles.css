@@ -1,5 +1,6 @@
 body {
     font-family: "Garamond", serif;
+    
 }
 
 h1, h2, h3 {
@@ -17,6 +18,7 @@ header h2 {
 .site-footer{
     background-image: linear-gradient(#f7cdde, white);
     padding: 20px 0;
+    color: gray;
 }
 footer {
     background-image: linear-gradient(#ffc2db, white);
@@ -24,8 +26,9 @@ footer {
 }
 
 .jumbotron {
+    text-align: center;
     margin: 0;
-    padding: 30px;
+    padding: 75px;
     background-image: linear-gradient(to right, #f393c0, #f7cdde, #f8f4f6);
     color: white;
 }
@@ -37,5 +40,22 @@ footer {
 }
 
 .navbar {
-    background-color: #ffacce;
+    background-image: linear-gradient(to right, #f393c0, #f7cdde, #f8f4f6);
+    color:white;
+}
+
+#menu {
+    padding: 20px 0;   
+}
+
+#about, #book {
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.bg-image{
+    background-image: url("../img/#.jpg");
+    background-position: fixed;
+    padding: 50px;
+    background-repeat: no-repeat;
 }
