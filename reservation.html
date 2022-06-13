@@ -56,19 +56,18 @@
             <div class="row row-content">
                 <div class="card col-4 text-center">
                     <h3>Royalty</h3>
-                    <label for="maidRoyalty"><p><img src="img/classicmaidoutfit.jpg" width="200px"></p></label>
+                    <label for="maidRoyalty"><p><img src="img/classicmaidoutfit.jpg" alt="Long maid outfit" width="200px"></p></label>
                 </div>
                 <div class="card col-4 text-center">
                     <h3>Casual</h3>
-                    <label for="maidCasual"><p><img src="img/frenchmaidoutfit.jpg" width="210px" height="230"></p></label>
+                    <label for="maidCasual"><p><img src="img/frenchmaidoutfit.jpg" alt="Short French maid outfit" width="210px" height="230"></p></label>
                 </div>
                 <div class="card col-4 text-center">
                     <h3>Kawaii</h3>
-                    <label for="maidKawaii"><p><img src="img/pinkmaidoutfit.jpg" width="210px" height="230"></p></label>
-
+                    <label for="maidKawaii"><p><img src="img/pinkmaidoutfit.jpg" alt="Frilly and colorful maid outfits" width="210px" height="230"></p></label>
                 </div>
             </div>
-
+        
             <form class="row-content">
                 <div class="row form-group">
                     <label for="firstName" class="col-md-2 col-form-label">First Name</label>
@@ -106,30 +105,40 @@
                         <div class="col-5 col-md-3">
                             <input type="number" class="form-control" id="partySize" name="partySize" placeholder="How many?" />
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        </div class="col-3 cols-md-6 form-check-inline">
-                            Maid Style
-                            <div class="col form-check form-check-inline">
-                                <input type="radio" class="form-check-input" id="maidRoyalty" name="maidRadios" value="royalty" />
-                                <label for="maidRoyalty" class="form-check-label">Royalty</label>
-                            </div>
-                            <div class="col form-check form-check-inline">
-                                <input type="radio" class="form-check-input" id="maidCasual" name="maidRadios" value="casual" />
-                                <label for="maidCasual" class="form-check-label">Casual</label>
-                            </div>
-                            <div class="col form-check form-check-inline">
-                                <input type="radio" class="form-check-input" id="maidKawaii" name="maidRadios" value="kawaii" />
-                                <label for="maidKawaii" class="form-check-label">Kawaii</label>
-                            </div>
+                        
+                        <label for="date" class="col col-sm-2 col-form-label">Date</label>
+                        <div class="col">
+                            <input class="form-control" type="date" name="date" id="date" placeholder="date">
                         </div>
                     </div>
+
                     <div class="form-group row">
-                        <div class="form-group">
-                            <label for="optionalText">How else can we serve you?</label>
-                            <textarea class="form-control" id="optionalText" rows="3"></textarea>
+                        <label class="col-1 col-5 col-sm-2 col-form-label text-nowrap">Maid Style</label>
+                        <div class="col-1 form-check form-check-inline ml-3" >
+                            <input type="radio" class="form-check-input" id="maidRoyalty" name="maidRadios" value="royalty" />
+                            <label for="maidRoyalty" class="form-check-label">Royalty</label>
+                        </div>
+                        <div class="col-1 form-check ml-3 form-check-inline">
+                            <input type="radio" class="form-check-input" id="maidCasual" name="maidRadios" value="casual" />
+                            <label for="maidCasual" class="form-check-label">Casual</label>
+                        </div>
+                        <div class="col-1 form-check ml-3 form-check-inline">
+                            <input type="radio" class="form-check-input" id="maidKawaii" name="maidRadios" value="kawaii" />
+                            <label for="maidKawaii" class="form-check-label">Kawaii</label>
                         </div>
                     </div>
+
+                    <div class="form-group row">
+                        <label for="optionalText" class="col">How else can we serve you?</label>
+                        <textarea class="form-control" id="optionalText" rows="3"></textarea>
+                    </div>
+
+                    <div class="col">
+                        <div class="row form-group">
+                            <button class="btn btn-light" type="submit">Submit</button>
+                        </div>
+                    </div>
+
                 </div>
             </form>
         </div>
