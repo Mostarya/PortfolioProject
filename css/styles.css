@@ -59,3 +59,52 @@ footer {
     padding: 50px;
     background-repeat: no-repeat;
 }
+
+#submitBtn {
+    background-color: white;
+    font-family: "Sofia", serif;
+}
+
+#resume {
+    color:white;
+    font-family: "Sofia", serif;
+}
+
+/* Style the "Choose File" button----
+.form-control-file {
+    color:white;
+    font-family: "Sofia", serif;
+} 
+*/
+
+#reserveHeadCard {
+    background-image: linear-gradient(to bottom, #f7cdde, #f8f4f6);
+    color: gray;
+    text-align: center;
+    font-family: "Sofia", serif;
+}
+#reserveCard, #careerCard{
+    background-color: #f7cdde;
+}
+
+#careerHeadCard {
+    background-image: linear-gradient(to bottom, #f7cdde, #f8f4f6);
+    font-family: "Sofia", serif;
+    text-align: center;
+}
+
+#menuCard {
+    background-color: #f7cdde;
+    font-family: "Sofia", serif;
+}
+
+#maidCard {
+    background-color: #f7cdde;
+    color: gray;
+    font-family: "Sofia", serif;
+}
+
+#maidCard img {
+    height: 260px;
+    width: 230px;
+}

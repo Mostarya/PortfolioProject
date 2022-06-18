@@ -35,7 +35,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item active"><a class="nav-link" href="#">Reservations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
             </div>
@@ -53,94 +53,106 @@
     
     <div>
         <div class="container">
-            <div class="row row-content">
-                <div class="card col-4 text-center">
+            <div class="card-deck row row-content">
+                <div class="card col-4 text-center" id="maidCard">
                     <h3>Royalty</h3>
-                    <label for="maidRoyalty"><p><img src="img/classicmaidoutfit.jpg" alt="Long maid outfit" width="200px"></p></label>
+                    <label for="maidRoyalty"><p><img src="img/classicmaidoutfit.jpg" alt="Long maid outfit" class="img-fluid rounded"></p></label>
                 </div>
-                <div class="card col-4 text-center">
+                <div class="card col-4 text-center" id="maidCard">
                     <h3>Casual</h3>
-                    <label for="maidCasual"><p><img src="img/frenchmaidoutfit.jpg" alt="Short French maid outfit" width="210px" height="230"></p></label>
+                    <label for="maidCasual"><p><img src="img/frenchmaidoutfit.jpg" alt="Short French maid outfit" class="img-fluid rounded"></p></label>
                 </div>
-                <div class="card col-4 text-center">
+                <div class="card col-4 text-center" id="maidCard">
                     <h3>Kawaii</h3>
-                    <label for="maidKawaii"><p><img src="img/pinkmaidoutfit.jpg" alt="Frilly and colorful maid outfits" width="210px" height="230"></p></label>
+                    <label for="maidKawaii"><p><img src="img/pinkmaidoutfit.jpg" alt="Frilly and colorful maid outfits" class="img-fluid rounded"></p></label>
                 </div>
             </div>
         
-            <form class="row-content">
-                <div class="row form-group">
-                    <label for="firstName" class="col-md-2 col-form-label">First Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
-                        </div>
+            <div class="row-content">
+                <div class="card " id="reserveCard">
+                    <div class="card-header" id="reserveHeadCard">
+                        <h3>Book a Reservation</h3>
                     </div>
+                    <div class="card-body">
+                        <form class="">
+                            <div class="row form-group">
+                                <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                    </div>
+                                </div>
 
-                    <div class="form-group row">
-                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
-                        </div>
+                                <div class="form-group row">
+                                    <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                                    <div class="col">
+                                        <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                                    <div class="col-md-10">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="partySize" class="col-md-2 col-form-label">Party Size</label>
+                                    <div class="col-xs-2 col-md-2">
+                                        <input type="number" class="form-control" id="partySize" name="partySize" placeholder="How many?" />
+                                    </div>
+                                    
+                                    <label for="date" class="col col-sm-1 col-form-label">Date</label>
+                                    <div class="col-xs-4 col-md-2">
+                                        <input class="form-control" type="date" name="date" id="date" placeholder="date">
+                                    </div>
+
+                                    <label for="time" class="col col-sm-1 col-form-label">Time</label>
+                                    <div class="col-xs-4 col-md-2">
+                                        <input class="form-control" type="time" name="time" id="time" placeholder="time">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-1 col-5 col-sm-2 col-form-label text-nowrap">Maid Style</label>
+                                    <div class="col-1 form-check form-check-inline ml-3" >
+                                        <input type="radio" class="form-check-input" id="maidRoyalty" name="maidRadios" value="royalty" />
+                                        <label for="maidRoyalty" class="form-check-label">Royalty</label>
+                                    </div>
+                                    <div class="col-1 form-check ml-3 form-check-inline">
+                                        <input type="radio" class="form-check-input" id="maidCasual" name="maidRadios" value="casual" />
+                                        <label for="maidCasual" class="form-check-label">Casual</label>
+                                    </div>
+                                    <div class="col-1 form-check ml-3 form-check-inline">
+                                        <input type="radio" class="form-check-input" id="maidKawaii" name="maidRadios" value="kawaii" />
+                                        <label for="maidKawaii" class="form-check-label">Kawaii</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="optionalText" class="col">How else can we serve you?</label>
+                                    <textarea class="form-control" id="optionalText" rows="3" placeholder="Help us personalize our service to your event!"></textarea>
+                                </div>
+
+                                <div class="col">
+                                    <div class="row form-group">
+                                        <button id="submitBtn" class="btn text-secondary" type="submit">Submit</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+
                     </div>
-
-                    <div class="form-group row">
-                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
-                        <div class="col-5 col-md-3">
-                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
-                        </div>
-                        <div class="col-7">
-                            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="email" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="partySize" class="col-md-2 col-form-label">Party Size</label>
-                        <div class="col-5 col-md-3">
-                            <input type="number" class="form-control" id="partySize" name="partySize" placeholder="How many?" />
-                        </div>
-                        
-                        <label for="date" class="col col-sm-2 col-form-label">Date</label>
-                        <div class="col">
-                            <input class="form-control" type="date" name="date" id="date" placeholder="date">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="col-1 col-5 col-sm-2 col-form-label text-nowrap">Maid Style</label>
-                        <div class="col-1 form-check form-check-inline ml-3" >
-                            <input type="radio" class="form-check-input" id="maidRoyalty" name="maidRadios" value="royalty" />
-                            <label for="maidRoyalty" class="form-check-label">Royalty</label>
-                        </div>
-                        <div class="col-1 form-check ml-3 form-check-inline">
-                            <input type="radio" class="form-check-input" id="maidCasual" name="maidRadios" value="casual" />
-                            <label for="maidCasual" class="form-check-label">Casual</label>
-                        </div>
-                        <div class="col-1 form-check ml-3 form-check-inline">
-                            <input type="radio" class="form-check-input" id="maidKawaii" name="maidRadios" value="kawaii" />
-                            <label for="maidKawaii" class="form-check-label">Kawaii</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="optionalText" class="col">How else can we serve you?</label>
-                        <textarea class="form-control" id="optionalText" rows="3"></textarea>
-                    </div>
-
-                    <div class="col">
-                        <div class="row form-group">
-                            <button class="btn btn-light" type="submit">Submit</button>
-                        </div>
-                    </div>
-
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 
@@ -156,7 +168,7 @@
                         <li><a href="index.html" class="text-secondary">Menu</a></li>
                         <li><a href="about.html" class="text-secondary">About</a></li>
                         <li><a href="#" class="text-secondary">Reservations</a></li>
-                        <li><a href="#" class="text-secondary">Careers</a></li>
+                        <li><a href="careers.html" class="text-secondary">Careers</a></li>
                         <li><a href="#" class="text-secondary">Contact</a></li>
                     </ul>
                 </div>
