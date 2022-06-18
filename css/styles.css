@@ -3,8 +3,14 @@ body {
     
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Sofia", cursive;
+}
+
+h4 {
+    font-family: "Sofia", cursive;
+    color: white;
+    background-color: #f7cdde;
 }
 
 h2 {
@@ -60,8 +66,20 @@ footer {
     background-repeat: no-repeat;
 }
 
-#submitBtn {
+#submitBtn, #closeModal {
     background-color: white;
+    font-family: "Sofia", serif;
+}
+
+#closeModal {
+    background-color: white;
+    font-family: "Sofia", serif;
+    font-size: medium;
+    margin-left:400px;
+}
+
+#rulesBtn {
+    background-color: #f3bad4;
     font-family: "Sofia", serif;
 }
 
@@ -77,13 +95,13 @@ footer {
 } 
 */
 
-#reserveHeadCard {
+#reserveHeadCard, .modal-header {
     background-image: linear-gradient(to bottom, #f7cdde, #f8f4f6);
     color: gray;
     text-align: center;
     font-family: "Sofia", serif;
 }
-#reserveCard, #careerCard{
+#reserveCard, #careerCard, .modal-body{
     background-color: #f7cdde;
 }
 
