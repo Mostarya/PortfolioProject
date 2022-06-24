@@ -95,25 +95,30 @@ footer {
 } 
 */
 
-#reserveHeadCard, .modal-header {
+.modal-header {
     background-image: linear-gradient(to bottom, #f7cdde, #f8f4f6);
     color: gray;
     text-align: center;
     font-family: "Sofia", serif;
 }
-#reserveCard, #careerCard, .modal-body{
+#reserveCard, #careerCard, .modal-body, .card-body{
     background-color: #f7cdde;
 }
 
-#careerHeadCard {
+.card-header {
     background-image: linear-gradient(to bottom, #f7cdde, #f8f4f6);
     font-family: "Sofia", serif;
     text-align: center;
+    color: gray;
 }
 
 #menuCard {
     background-color: #f7cdde;
     font-family: "Sofia", serif;
+}
+
+#menuCard img {
+    padding: 10px;
 }
 
 #maidCard {
@@ -123,6 +128,11 @@ footer {
 }
 
 #maidCard img {
-    height: 260px;
-    width: 230px;
+    height: 200px;
+    width: 200px;
+}
+
+#contactCardDeck {
+    margin: auto;
+    width: 50%;
 }
