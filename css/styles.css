@@ -88,12 +88,16 @@ footer {
     font-family: "Sofia", serif;
 }
 
-/* Style the "Choose File" button----
-.form-control-file {
-    color:white;
-    font-family: "Sofia", serif;
-} 
-*/
+.custom-file::-webkit-file-upload-button {
+    border: 1px;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: white;
+    border-color: gray;
+    color: gray;
+}
+
+
 
 .modal-header {
     background-image: linear-gradient(to bottom, #f7cdde, #f8f4f6);
@@ -112,7 +116,7 @@ footer {
     color: gray;
 }
 
-#menuCard {
+#menuCard .card {
     background-color: #f7cdde;
     font-family: "Sofia", serif;
 }
@@ -135,4 +139,12 @@ footer {
 #contactCardDeck {
     margin: auto;
     width: 50%;
+}
+
+#contactCardDeck a {
+    color: gray;
+}
+
+#address {
+    font-size: large;
 }
