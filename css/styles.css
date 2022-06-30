@@ -35,13 +35,7 @@ h2 {
   padding: 20px 0;
   margin-top: 50px; }
 
-.bg-image {
-  background-image: url("../img/#.jpg");
-  background-position: fixed;
-  padding: 50px;
-  background-repeat: no-repeat; }
-
-#submitBtn, #closeModal {
+#submitBtn {
   background-color: white;
   font-family: "Sofia", serif; }
 
@@ -66,6 +60,8 @@ h2 {
   background-color: white;
   border-color: gray;
   color: gray; }
+  .custom-file::-webkit-file-upload-button :hover {
+    background-image: linear-gradient(to right, #f393c0, #f7cdde, #f8f4f6); }
 
 .modal-header {
   background-image: linear-gradient(to bottom, #f7cdde, #f8f4f6);

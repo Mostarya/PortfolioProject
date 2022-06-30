@@ -6,6 +6,11 @@ $color-pale: #f8f4f6;
 $header-font: "Sofia", serif;
 $body-font: "Garamond", serif;
 
+@mixin whiteBtn($btn-bg: white){
+    background-color: $btn-bg;
+    font-family: $header-font;
+}
+
 body {
     font-family: $body-font
     
@@ -53,23 +58,14 @@ h2 {
     margin-top: 50px;
 }
 
-.bg-image{
-    background-image: url("../img/#.jpg");
-    background-position: fixed;
-    padding: 50px;
-    background-repeat: no-repeat;
-}
-
-#submitBtn, #closeModal {
-    background-color: white;
-    font-family: $header-font;
+#submitBtn {
+    @include whiteBtn;
 }
 
 #closeModal {
-    background-color: white;
-    font-family: $header-font;
+    @include whiteBtn;
     font-size: medium;
-    margin-left:400px;
+    margin-left: 400px;
 }
 
 #rulesBtn {
@@ -80,6 +76,7 @@ h2 {
 #resume {
     color:white;
     font-family: $header-font;
+    
 }
 
 .custom-file::-webkit-file-upload-button {
@@ -89,6 +86,9 @@ h2 {
     background-color: white;
     border-color: gray;
     color: gray;
+    :hover {
+        background-image: linear-gradient(to right, $color-dark, $color-light, $color-pale);
+    }
 }
 
 .modal-header {
