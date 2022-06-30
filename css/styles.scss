@@ -1,0 +1,144 @@
+$color-dark: #f393c0;
+$color-mid: #ffc2db;
+$color-light: #f7cdde;
+$color-pale: #f8f4f6;
+
+$header-font: "Sofia", serif;
+$body-font: "Garamond", serif;
+
+body {
+    font-family: $body-font
+    
+}
+
+h1, h2, h3 {
+    font-family: $header-font
+}
+
+h2 {
+    color: $color-mid;
+}
+
+.site-footer{
+    background-image: linear-gradient($color-light, white);
+    padding: 20px 0;
+    color: gray;
+}
+
+.jumbotron {
+    text-align: center;
+    margin: 0;
+    padding: 75px;
+    background-image: linear-gradient(to right, $color-dark, $color-light, $color-pale);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, $color-dark, $color-light, $color-pale);
+    color:white;
+}
+
+#menu {
+    padding: 20px 0;   
+}
+
+#about, #book {
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.bg-image{
+    background-image: url("../img/#.jpg");
+    background-position: fixed;
+    padding: 50px;
+    background-repeat: no-repeat;
+}
+
+#submitBtn, #closeModal {
+    background-color: white;
+    font-family: $header-font;
+}
+
+#closeModal {
+    background-color: white;
+    font-family: $header-font;
+    font-size: medium;
+    margin-left:400px;
+}
+
+#rulesBtn {
+    background-color: $color-mid;
+    font-family: $header-font;
+}
+
+#resume {
+    color:white;
+    font-family: $header-font;
+}
+
+.custom-file::-webkit-file-upload-button {
+    border: 1px;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: white;
+    border-color: gray;
+    color: gray;
+}
+
+.modal-header {
+    background-image: linear-gradient(to bottom, $color-light, $color-pale);
+    color: gray;
+    text-align: center;
+    font-family: $header-font;
+}
+
+#reserveCard, #careerCard, .modal-body, .card-body{
+    background-color: $color-light;
+}
+
+.card-header {
+    background-image: linear-gradient(to bottom, $color-light, $color-pale);
+    font-family: $header-font;
+    text-align: center;
+    color: gray;
+}
+
+#menuCard {
+    .card {
+        background-color: $color-light;
+        font-family: $header-font;
+    }
+    img {
+        padding: 10px;
+    }
+}
+
+#maidCard {
+    background-color: $color-light;
+    color: gray;
+    font-family: $header-font;
+    
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+#contactCard {
+    margin: auto;
+    width: 50%;
+    
+    a {
+        color: gray;
+    }
+    address {
+        font-size: large;
+    }
+} 
