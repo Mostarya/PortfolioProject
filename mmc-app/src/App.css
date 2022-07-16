@@ -1,0 +1,102 @@
+body {
+  font-family: "Garamond", serif; }
+
+h1, h2, h3 {
+  font-family: "Sofia", serif; }
+
+h2 {
+  color: #ffc2db; }
+
+.site-footer {
+  background-image: linear-gradient(#f7cdde, white);
+  padding: 20px 0;
+  color: gray; }
+
+.jumbotron {
+  text-align: center;
+  margin: 0;
+  padding: 75px;
+  background-image: linear-gradient(to right, #f393c0, #f7cdde, #f8f4f6);
+  color: white; }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  background-image: linear-gradient(to right, #f393c0, #f7cdde, #f8f4f6);
+  color: white; }
+
+#menu {
+  padding: 20px 0; }
+
+#about, #book {
+  padding: 20px 0;
+  margin-top: 50px; }
+
+#submitBtn {
+  background-color: white;
+  font-family: "Sofia", serif; }
+
+#closeModal {
+  background-color: white;
+  font-family: "Sofia", serif;
+  font-size: medium;
+  margin-left: 400px; }
+
+#rulesBtn {
+  background-color: #ffc2db;
+  font-family: "Sofia", serif; }
+
+#resume {
+  color: white;
+  font-family: "Sofia", serif; }
+
+.custom-file::-webkit-file-upload-button {
+  border: 1px;
+  border-radius: 4px;
+  padding: 6px;
+  background-color: white;
+  border-color: gray;
+  color: gray; }
+  .custom-file::-webkit-file-upload-button :hover {
+    background-image: linear-gradient(to right, #f393c0, #f7cdde, #f8f4f6); }
+
+.modal-header {
+  background-image: linear-gradient(to bottom, #f7cdde, #f8f4f6);
+  color: gray;
+  text-align: center;
+  font-family: "Sofia", serif; }
+
+#reserveCard, #careerCard, .modal-body, .card-body {
+  background-color: #f7cdde; }
+
+.card-header {
+  background-image: linear-gradient(to bottom, #f7cdde, #f8f4f6);
+  font-family: "Sofia", serif;
+  text-align: center;
+  color: gray; }
+
+#menuCard .card {
+  background-color: #f7cdde;
+  font-family: "Sofia", serif; }
+
+#menuCard img {
+  padding: 10px; }
+
+#maidCard {
+  background-color: #f7cdde;
+  color: gray;
+  font-family: "Sofia", serif; }
+  #maidCard img {
+    height: 200px;
+    width: 200px; }
+
+#contactCard {
+  margin: auto;
+  width: 50%; }
+  #contactCard a {
+    color: gray; }
+  #contactCard address {
+    font-size: large; }
