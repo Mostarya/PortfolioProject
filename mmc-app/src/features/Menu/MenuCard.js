@@ -1,62 +1,23 @@
-import {Card, CardBody, CardDeck, CardImg} from 'reactstrap';
+import {Card, CardBody, CardImg} from 'reactstrap';
+import { Link } from 'react-router-dom';
 
+export const MenuCard = ({ item }) => {
+    const { type, image, description, food,  price } = item; 
 
-const MealCard = (props) => {
     return (
-        <>
-        <CardDeck>
+        <Link to={`${type}`} className="align-self-center">
             <Card>
                 <CardImg
-                    src={props.menuItem.image}
-                    alt={props.menuItem.description}
+                    src={image}
+                    alt={description}
                 />
-                <CardBody>
-                    <h3>{props.menuItem.food}</h3>
-                    <p>{props.menuItem.price}</p>
+                <CardBody className="text-center">
+                    <h3>{food}</h3>
+                    <p>{price}</p>
                 </CardBody>
             </Card>
-        </CardDeck>
-        </>
+        </Link>
     );
-}
+};
 
-const SweetCard = (props) => {
-    return (
-        <>
-        <CardDeck>
-            <Card>
-                <CardImg 
-                    src={props.menuItem.image}
-                    alt={props.menuItem.description}
-                />
-                <CardBody>
-                    <h3>{props.menuItem.food}</h3>
-                    <p>{props.menuItem.price}</p>
-                </CardBody>
-            </Card>
-        </CardDeck>
-        </>
-    );
-}
-
-const DrinkCard = (props) => {
-    return (
-        <>
-        <CardDeck>
-            <Card>
-                <CardImg 
-                    src={props.menuItem.image}
-                    alt={props.menuItem.description}
-                />
-                <CardBody>
-                    <h3>{props.menuItem.food}</h3>
-                    <p>{props.menuItem.price}</p>
-                </CardBody>
-            </Card>
-        </CardDeck>
-        </>
-    );
-}
-
-
-export default (MealCard, SweetCard, DrinkCard);
+export default MenuCard;

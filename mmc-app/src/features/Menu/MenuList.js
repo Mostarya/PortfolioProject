@@ -1,20 +1,20 @@
 import {Col, Row} from 'reactstrap';
-import { MenuItems } from './MenuItems';
 import MenuCard from "./MenuCard";
+import { selectAllItems } from './menuSlice';
 
 const MenuList = () => {
+    const items = selectAllItems();
+    
     return (
-        <>
-        <Row>
-            {MenuItems.map(item => {
+        <Row className='ms-auto'>
+            {items.map(item => {
                 return (
-                    <Col md='5' key={item.id}>
-                        <MenuCard menuItem={item}/>
+                    <Col md='5' key={item.type}>
+                        <MenuCard item={item}/>
                     </Col>
                 );
             })}
         </Row>
-        </>
     )
 }
 

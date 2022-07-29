@@ -1,29 +1,33 @@
-import {Container, Navbar, NavbarBrand, Nav, NavItem, NavLink, Collapse} from 'reactstrap';
+import {Container, Navbar, NavbarToggler, Nav, NavItem, Collapse} from 'reactstrap';
+import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 const SiteNav = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
-        <Navbar className="navbar-expand-sm navbar-dark sticky-top">
+        <Navbar dark sticky='top' expand='md'>
             <Container>
-                <NavbarBrand href="#"></NavbarBrand>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mmcNavbar">
+                {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mmcNavbar">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <Collapse id="mmcNavbar">
-                    <Nav>
-                        <NavItem type="active">
-                            <NavLink href="#">Menu</NavLink>
+                </button> */}
+                <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
+                <Collapse isOpen={menuOpen} navbar id="mmcNavbar">
+                    <Nav className='ms-auto' navbar>
+                        <NavItem>
+                            <NavLink className='nav-link' to='/'>Menu</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="about.html">About</NavLink>
+                            <NavLink className='nav-link' to='/about'>About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="reservation.html">Reservations</NavLink>
+                            <NavLink className='nav-link' to='/reservations'>Reservations</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="careers.html">Careers</NavLink>
+                            <NavLink className='nav-link' to='/careers'>Careers</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#">Contact</NavLink>
+                            <NavLink className='nav-link' to='/contact'>Contact</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

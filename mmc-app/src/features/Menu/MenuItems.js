@@ -83,5 +83,3 @@ export const MenuItems = [
         description: "Delicious cappuccino with foam art of a shiba inu"
     },
 ]
-
-export default MenuItems;
