@@ -1,42 +1,37 @@
 import { Container, Row, Col } from "reactstrap";
+import { useState } from "react";
+import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
 
 const RulesModal = () => {
+    const [modalOpen, setModalOpen] = useState(false);
+
     return (
         <>
-            <Container>
-                <Col class="col text-center">
-                    <div class="mt-5">
-                        <a href="#rulesModal" class="btn text-white text-nowrap" role="button" data-toggle="modal" id="rulesBtn">Rules</a>
-                    </div>
-                </Col>
-            </Container>
+            <Button  className="mt-5" onClick={() => setModalOpen(true)} >
+                <a href="#rulesModal" className="text-white text-nowrap"id="rulesBtn">Rules</a>
+            </Button>
 
-            <div id="rulesModal" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">Rules</h3>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <ol>
-                                    <li>Please be respectful and not touch our maids.</li>
-                                    <li>Don't ask the maids for their contact information.</li>
-                                    <li>No pictures of the maids.</li>
-                                    <li>No outside food or drink.</li>
-                                    <li>No violent or provocative requests.</li>
-                                </ol>
-                            </div>
-                            <Col class="col text-right">
-                                <div class="row form-group">
-                                    <button class="btn btn-sm text-secondary" type="button" data-dismiss="modal" id="closeModal">Close</button>
-                                </div>
-                            </Col>
-                        </div>
-                    </div>
-                </div>    
-            </div>
+            <Modal id="rulesModal"  isOpen={modalOpen}>
+                <ModalHeader toggle={ () => setModalOpen(false) }>
+                    <h3>Rules</h3>
+                </ModalHeader>
+                <ModalBody>
+                    <Container className="container-fluid">
+                        <ol>
+                            <li>Please be respectful and not touch our maids.</li>
+                            <li>Don't ask the maids for their contact information.</li>
+                            <li>No pictures of the maids.</li>
+                            <li>No outside food or drink.</li>
+                            <li>No violent or provocative requests.</li>
+                        </ol>
+                    </Container>
+                    <Col className="col text-right">
+                        <Row className="row form-group">
+                            <Button className="btn-sm text-secondary" type="button" id="closeModal">Close</Button>
+                        </Row>
+                    </Col>
+                </ModalBody>  
+            </Modal>
         </>
     )
 }
