@@ -1,5 +1,5 @@
-import { Container, Col, Row, Card, CardBody, CardHeader, Button } from "reactstrap";
-import { Formik, Form, FormGroup, Field, Label } from "formik";
+import { Container, Col, Row, Card, CardBody, CardHeader, Button, Label, FormGroup } from "reactstrap";
+import { Formik, Form, Field } from "formik";
 import MaidCard from "../features/MaidStyle/MaidCard";
 import MaidStyle from "../features/MaidStyle/MaidStylesList";
 import {selectAllStyles} from "../features/MaidStyle/MaidSlice";
@@ -8,7 +8,7 @@ const ReservationPage = () => {
     return (
         <>
             <Container>
-                <Row class="row-content text-center">
+                <Row class="text-center">
                     <Col id="book">
                         <h2>Book a Private Room!</h2>
                         <p>Choose between your choice of 3 maid styles to match your occassion.</p>
@@ -18,7 +18,6 @@ const ReservationPage = () => {
     
             <Container>
                 <Row className="card-deck row-content">
-                    <MaidCard></MaidCard>
                 </Row>
             
                 <Row class="row-content">
@@ -32,7 +31,7 @@ const ReservationPage = () => {
                                     <FormGroup>
                                         <Label htmlFor="firstName" className="col-md-2 col-form-Label">First Name</Label>
                                         <Field 
-                                            md="10" 
+                                            md-10
                                             type="text" 
                                             className="form-control" 
                                             id="firstName" 
@@ -43,9 +42,9 @@ const ReservationPage = () => {
                                     </FormGroup>
 
                                     <FormGroup>
-                                        <Label htmlFor="lastName" class="col-md-2 col-form-Label">Last Name</Label>
+                                        <Label htmlFor="lastName" className="col-md-2 col-form-Label">Last Name</Label>
                                         <Field 
-                                            md="10"
+                                            md-10
                                             type="text" 
                                             className="form-control" 
                                             id="lastName" 

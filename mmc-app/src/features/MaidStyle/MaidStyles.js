@@ -1,6 +1,6 @@
-import RoyaltyImg from '../../../img/classicmaidoutfit';
-import CasualImg from '../../../img/frenchmaidoutfit';
-import KawaiiImg from '../../../img/pinkmaidoutfit';
+import RoyaltyImg from '../../assets/img/classicmaidoutfit.jpg';
+import CasualImg from '../../assets/img/frenchmaidoutfit.jpg';
+import KawaiiImg from '../../assets/img/pinkmaidoutfit.jpg';
 
 
 export const MaidStyle = [
