@@ -10,5 +10,5 @@ export const MenuById = (id) => {
 };
 
 export const MenuByType = (type) => {
-    return MenuItems.find((item) => item.type === parseInt(type));
+    return MenuItems.filter((item) => item.type === parseInt(type));
 };

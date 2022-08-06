@@ -81,5 +81,5 @@ export const MenuItems = [
         food: "Cappuccino",
         price: "$6",
         description: "Delicious cappuccino with foam art of a shiba inu"
-    },
-]
+    }
+];

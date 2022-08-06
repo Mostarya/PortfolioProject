@@ -24,12 +24,14 @@ const RulesModal = () => {
                             <li>No outside food or drink.</li>
                             <li>No violent or provocative requests.</li>
                         </ol>
+                        <Col className="col text-right">
+                            <Row className="row form-group">
+                                <Button className="btn-sm text-secondary" type="button" id="closeModal">
+                                    Close
+                                </Button>
+                            </Row>
+                        </Col>
                     </Container>
-                    <Col className="col text-right">
-                        <Row className="row form-group">
-                            <Button className="btn-sm text-secondary" type="button" id="closeModal">Close</Button>
-                        </Row>
-                    </Col>
                 </ModalBody>  
             </Modal>
         </>
