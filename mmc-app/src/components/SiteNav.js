@@ -6,14 +6,14 @@ const SiteNav = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Navbar dark sticky='top' expand='md'>
+        <Navbar dark sticky='top' expand='md' >
             <Container>
                 {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mmcNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button> */}
                 <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
                 <Collapse isOpen={menuOpen} navbar id="mmcNavbar">
-                    <Nav className='ms-auto' navbar>
+                    <Nav className='ml-auto' navbar>
                         <NavItem>
                             <NavLink className='nav-link' to='/'>Menu</NavLink>
                         </NavItem>

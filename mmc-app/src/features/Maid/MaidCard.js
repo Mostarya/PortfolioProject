@@ -1,21 +1,21 @@
 import {Card, CardBody, CardImg} from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-export const MaidCard = ({ maidStyle }) => {
-    const { id, image, style, description } = maidStyle; 
-
+export const MaidCard = ({maid}) => {
+    const { id, image, style, description } = maid;
     return (
-        <Link to={`${id}`} className="align-self-center col-4 text-center"  id="maidCard">
+        <Link to={`${id}`} className=""  id="maidCard">
             <Card>
                 <CardBody className="text-center">
                     <h3>{style}</h3>
-                </CardBody>
                 <CardImg
                     src={image}
                     alt={description}
                 />
+                </CardBody>
+                
             </Card>
-        </Link>
+       </Link>
     );
 };
 
