@@ -15,7 +15,7 @@ const ReservationPage = () => {
             </Container>
     
             <Container>
-                <Row >
+                <Row>
                     <MaidStylesList className="align-items-center row-content text-center"/>
                 </Row>
             </Container>
@@ -28,8 +28,9 @@ const ReservationPage = () => {
                     <CardBody>
                         <Formik>
                             <Form>
-                                <FormGroup>
-                                    <Label htmlFor="firstName" xs='3' >First Name</Label>
+                                
+                                <FormGroup xs="2">
+                                    <Label htmlFor="firstName" className="text-nowrap" >First Name</Label>
                                     <Field 
                                         xs="9"
                                         type="text" 
@@ -42,7 +43,7 @@ const ReservationPage = () => {
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label htmlFor="lastName" md="3">Last Name</Label>
+                                    <Label htmlFor="lastName">Last Name</Label>
                                     <Field 
                                         md="3"
                                         type="text" 
@@ -54,8 +55,9 @@ const ReservationPage = () => {
                                     </Field>
                                 </FormGroup>
 
-                                <FormGroup>
-                                    <Label htmlFor="areaCode" md="3">Contact Tel.</Label>
+                                
+                                <FormGroup xs="2">
+                                    <Label htmlFor="areaCode" className="text-nowrap">Contact Tel.</Label>
                                     <Field 
                                         type="tel" 
                                         className="col form-control" 
@@ -66,9 +68,9 @@ const ReservationPage = () => {
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label htmlFor="email" md="3">Email</Label>
+                                    <Label htmlFor="email">Email</Label>
                                     <Field 
-                                        md="3"
+                                        md="2"
                                         type="email" 
                                         className="form-control" 
                                         id="email" 
@@ -79,10 +81,9 @@ const ReservationPage = () => {
                                 </FormGroup>
 
                                 <FormGroup inline>
-                                    <Label htmlFor="partySize" sm='1' md="2">Party Size</Label>
+                                    <Label htmlFor="partySize" className="text-nowrap">Party Size</Label>
                                     <Input 
                                         xs="2" 
-                                        md="3"
                                         type="number" 
                                         className="form-control" 
                                         id="partySize" 
@@ -90,10 +91,9 @@ const ReservationPage = () => {
                                         placeholder="How many?" 
                                     />
                                     
-                                    <Label htmlFor="date" sm='1' className="col col- text-nowrap">Date</Label>
+                                    <Label htmlFor="date" className="col text-nowrap">Date</Label>
                                     <Field 
-                                        xs='4' 
-                                        md='3' 
+                                        xs='2' 
                                         className="form-control" 
                                         type="date" 
                                         name="date" 
@@ -102,10 +102,9 @@ const ReservationPage = () => {
                                         >
                                     </Field>
 
-                                    <Label htmlFor="time" sm='3' className="text-nowrap">Time</Label>
+                                    <Label htmlFor="time" className="text-nowrap">Time</Label>
                                     <Field 
-                                        xs="4" 
-                                        md='3'
+                                        xs="2"
                                         className="form-control" 
                                         type="time" 
                                         name="time" 
@@ -115,7 +114,7 @@ const ReservationPage = () => {
                                     </Field>
                                 </FormGroup>
                                 
-                                <FormGroup className="row">
+                                <FormGroup className="mb-4 text-center">
                                     <Label sm='3' className="text-nowrap">
                                         Maid Style
                                     </Label>
@@ -136,7 +135,7 @@ const ReservationPage = () => {
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label htmlFor="optionalText" className="col">How else can we serve you?</Label>
+                                    <Label htmlFor="optionalText">How else can we serve you?</Label>
                                     <Field 
                                         className="form-control" 
                                         id="optionalText" 
