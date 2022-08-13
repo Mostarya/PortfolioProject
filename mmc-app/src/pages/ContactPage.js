@@ -43,7 +43,7 @@ const ContactPage = () => {
                     </CardBody>
                 </Card>
             </Container>
-            <Container className="text-nowrap row-content text-center" id="contactCardDeck">
+            {/* <Container className="text-nowrap row-content text-center" id="contactCardDeck">
                 <Card xs="12" id="contactCard">
                     <CardHeader>
                         <h3>Comments</h3>
@@ -53,9 +53,11 @@ const ContactPage = () => {
                         <CommentForm  />
                     </CardBody>
                 </Card>
-            </Container>
+            </Container> */}
         </>
     )
 };
 
 export default ContactPage;
+
+// Possible adding comment capabilities in the future

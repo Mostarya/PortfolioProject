@@ -29,7 +29,7 @@ const ReservationPage = () => {
                         <h3>Book a Reservation</h3>
                     </CardHeader>
                     <CardBody>
-                        <Formik>
+                        <Formik  initialValues={ { firstName:'', lastName:'',telNum:'', email:'', partySize:'', date:'', time:''} }>
                             <Form>
                                 
                                 <FormGroup xs="2">
@@ -142,6 +142,7 @@ const ReservationPage = () => {
                                     <Field 
                                         className="form-control" 
                                         id="optionalText" 
+                                        name="optionalText"
                                         rows="3"
                                         as="textarea"
                                         placeholder="Help us personalize our service to your event!">

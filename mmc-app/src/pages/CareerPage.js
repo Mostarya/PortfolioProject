@@ -20,18 +20,18 @@ const CareerPage = () => {
                         <h3>Careers</h3>
                     </CardHeader>
                     <CardBody className="container mt-3">
-                        <Formik>
+                        <Formik initialValues={ { firstName:'', lastName:'',telNum:'', email:''} }>
                             <Form>
                                 <FormGroup>
                                     <p>Select the position you wish to apply for:</p>  
                                     
                                     <select className="form-control" id="careerList">
-                                    <option readonly>Choose..</option>
-                                    <option value="maid">Maid</option>
-                                    <option value="barista">Barista</option>
-                                    <option value="chef">Chef</option>
-                                    <option value="generalMgr">Connoisseur - General Manager</option>
-                                    <option value="regionalMgr">Yeif Meister - Regional Manager</option>
+                                        <option readOnly>Choose..</option>
+                                        <option value="maid">Maid</option>
+                                        <option value="barista">Barista</option>
+                                        <option value="chef">Chef</option>
+                                        <option value="generalMgr">Connoisseur - General Manager</option>
+                                        <option value="regionalMgr">Yeif Meister - Regional Manager</option>
                                     </select>
                                 </FormGroup>
 

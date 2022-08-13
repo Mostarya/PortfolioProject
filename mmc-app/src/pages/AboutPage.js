@@ -5,7 +5,9 @@ import RulesModal from "../components/RulesModal";
 const AboutPage = () => {
     return (
         <>
-        <RulesModal />
+        <div className="text-center">
+            <RulesModal />
+        </div>
         <Container>
             <Row className="text-center">
                 <Col id="about">
@@ -22,13 +24,12 @@ const AboutPage = () => {
                     <h3>Adorable Delicious Food</h3>
                     <p className="d-none d-sm-block">Writing with ketchup or ask for a drawing! We're happy to please. You'll definitely see lots of kawaii animals!</p>
                     <h3>Cute Outfits</h3>
-                    <p className="d-none d-sm-block">Our maids wear between 3 dress types: 
-                        <ul className="list-unstyled">
-                            <li className="d-none d-sm-block">classic (long)</li>
-                            <li className="d-none d-sm-block">French (short)</li>
-                            <li className="d-none d-sm-block">hime-lolita inspired (more frilly and colorful)</li>
-                        </ul>
-                    </p>
+                    <p className="d-none d-sm-block">Our maids wear between 3 dress types:</p> 
+                    <ul className="list-unstyled">
+                        <li className="d-none d-sm-block">classic (long)</li>
+                        <li className="d-none d-sm-block">French (short)</li>
+                        <li className="d-none d-sm-block">hime-lolita inspired (more frilly and colorful)</li>
+                    </ul>
                 </Col>
             </Row>
         </Container>

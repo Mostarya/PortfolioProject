@@ -47,7 +47,8 @@ h2 {
 
 #rulesBtn {
   background-color: #ffc2db;
-  font-family: "Sofia", serif; }
+  border-color: #ffc2db;
+  font-family: "Sofia", serif;}
 
 #resume {
   color: white;

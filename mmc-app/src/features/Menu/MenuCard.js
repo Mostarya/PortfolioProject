@@ -1,12 +1,10 @@
 import {Card, CardBody, CardImg} from 'reactstrap';
-import { Link } from 'react-router-dom';
 
 export const MenuCard = ({item}) => {
     const { id, image, description, food,  price } = item;
      
     return (
-        <Link to={`${id}`} className="align-self-center">
-            <Card>
+            <Card className="align-self-center">
                 <CardImg
                     src={image}
                     alt={description}
@@ -16,7 +14,6 @@ export const MenuCard = ({item}) => {
                     <p>{price}</p>
                 </CardBody>
             </Card>
-        </Link>
     );
 };
 
