@@ -1,8 +1,11 @@
 import { Container, Col, Row, Card, CardBody, CardHeader, Button, Label, FormGroup, Input } from "reactstrap";
 import { Formik, Form, Field } from "formik";
 import MaidStylesList from "../features/Maid/MaidStylesList";
+import { useState } from "react";
 
 const ReservationPage = () => {
+    const [radioValue, setRadioValue] = useState();
+   
     return (
         <>
             <Container>
@@ -16,7 +19,7 @@ const ReservationPage = () => {
     
             <Container>
                 <Row>
-                    <MaidStylesList className="align-items-center row-content text-center"/>
+                    <MaidStylesList className="align-items-center row-content text-center" setRadioValue={ setRadioValue } />
                 </Row>
             </Container>
 

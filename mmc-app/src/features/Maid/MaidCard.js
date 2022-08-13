@@ -1,21 +1,24 @@
-import {Card, CardBody, CardImg} from 'reactstrap';
-import { Link } from 'react-router-dom';
+import {Card, CardBody, CardImg, Label} from 'reactstrap';
+//import { Link } from 'react-router-dom';
 
-export const MaidCard = ({maid}) => {
+export const MaidCard = ({maid, setRadioValue}) => {
     const { id, image, style, description } = maid;
     return (
-        <Link to={`${id}`} className=""  id="maidCard">
-            <Card>
-                <CardBody className="text-center">
-                    <h3>{style}</h3>
-                <CardImg
-                    src={image}
-                    alt={description}
-                />
-                </CardBody>
-                
-            </Card>
-       </Link>
+            <div onClick={() => { setRadioValue(style); console.log(style)}}>
+                <Label htmlFor={`maid${style}`}>
+                    <Card id="maidCard">
+                        <CardBody className="text-center">
+                            <h3>{style}</h3>
+                        <CardImg
+                            src={image}
+                            alt={description}
+                            
+                        />
+                        </CardBody>
+                        
+                    </Card>
+                </Label>
+            </div>
     );
 };
 
